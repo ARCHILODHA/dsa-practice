@@ -1,9 +1,15 @@
 # Arrays
 
-Problems solved using array techniques.
+## Problems
 
-Topics:
-- Two Sum
-- Prefix Sum
+| Problem | Approach | Difficulty |
+|--------|---------|-----------|
+| Two Sum | HashMap | Easy |
+| Best Time to Buy/Sell Stock | Greedy | Easy |
+| Prefix Sum | Prefix Array | Medium |
+
+## Topics Covered
+- Two Pointers
 - Sliding Window
-- Kadane's Algorithm
+- Prefix Sum
+- Kadane’s Algorithm
