@@ -1,0 +1,19 @@
+
+# Sorting Patterns
+
+## 1. Introduction
+Sorting arranges elements in ascending or descending order. It is useful for searching, duplicate detection, interval problems, and greedy algorithms.
+
+## 2. Common Sorting Algorithms
+
+| Algorithm | Best Case | Average Case | Worst Case |
+|---|---|---|---|
+| Bubble Sort | O(N) | O(N²) | O(N²) |
+| Selection Sort | O(N²) | O(N²) | O(N²) |
+| Insertion Sort | O(N) | O(N²) | O(N²) |
+| Merge Sort | O(N log N) | O(N log N) | O(N log N) |
+| Quick Sort | O(N log N) | O(N log N) | O(N²) |
+
+## 3. STL Sorting in C++
+```cpp
+sort(arr.begin(), arr.end());
