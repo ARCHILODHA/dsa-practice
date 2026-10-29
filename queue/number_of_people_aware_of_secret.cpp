@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int peopleAwareOfSecret(int n, int delay, int forget) {
+        const int MOD = 1'000'000'007;
+
+        vector<long long> dp(n + 1, 0);
+        dp[1] = 1;
+
+        long long sharing = 0;
+
+        for (int day = 2; day <= n; day++) {
+            if (day - delay >= 1) {
+                sharing = (sharing + dp[day - delay]) % MOD;
+            }
+
+            if (day - forget >= 1) {
+                sharing = (sharing - dp[day - forget] + MOD) % MOD;
+            }
+
+            dp[day] = sharing;
+        }
+
+        long long answer = 0;
+
+        for (int day = max(1, n - forget + 1); day <= n; day++) {
+            answer = (answer + dp[day]) % MOD;
+        }
+
+        return answer;
+    }
+};
